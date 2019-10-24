@@ -4,14 +4,13 @@ import { Http, Response } from '@angular/http';
 @Injectable()
 export class ProductService {
 
+
+  private _alburmurl =  '../assets/album.json';
+
   constructor(private _http: Http) { }
 
-  private (_alburmurl) {
-    return '../assets/album.json';
-  }
-
-  getAlbum(id) : number{
-
+  getAlbum(id: number) {
+    return this._http.get(this._alburmurl)
   }
 
 }
