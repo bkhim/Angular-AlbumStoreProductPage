@@ -8,12 +8,12 @@ import { Http, Response } from '@angular/http';
 export class ProductService {
 
 
-  private _alburmurl =  '../assets/album.json';
+  private _albumurl =  '../assets/album.json';
 
   constructor(private _http: Http) { }
 
   getAlbum(id: number) {
-    return this._http.get(this._alburmurl)
+    return this._http.get(this._albumurl)
   }
 
 }
