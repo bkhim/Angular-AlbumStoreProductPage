@@ -1,3 +1,6 @@
 export interface Album {
-  name
+  name: string;
+  releaseDate: string;
+  coverImage: string;
+  tracks: Track[]
 }
