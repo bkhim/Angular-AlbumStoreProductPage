@@ -10,6 +10,11 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { ProductService } from './product.service';
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
 import { ProductListComponent } from './product-list/product-list.component'
+import { RouterModule, Route } from '@angular/router';
+
+appRoutes: Routes :[]
+
+
 
 @NgModule({
   declarations: [
